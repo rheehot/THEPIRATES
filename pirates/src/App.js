@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Link } from "react-router-dom";
 import styled from "styled-components";
 import Banner from "./components/Banner";
+import Filter from "./components/Filter";
 import GlobalStyles from "./components/GlobalStyles";
 import Search from "./components/Search";
 import Home from "./Pages/Home";
@@ -73,6 +74,7 @@ function App() {
   return (
     <WebContainer>
       <BrowserRouter>
+        {/* header */}
         <Header>
           <LogoWrap>
             <Link to="/">
@@ -86,7 +88,7 @@ function App() {
             <div>로그인/가입</div>
           </LoginWrap>
         </Header>
-
+        {/* nav */}
         <NavContainer>
           <List>
             <Item>
@@ -120,6 +122,7 @@ function App() {
       </BrowserRouter>
       {/* 배너자리 / 검색창 */}
       <Banner></Banner>
+      <Filter></Filter>
       <Search></Search>
       <GlobalStyles />
     </WebContainer>

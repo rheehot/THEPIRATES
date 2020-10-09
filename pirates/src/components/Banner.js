@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 import BannerData from "../Data/bannerData.json";
-// <i class="fas faChevronDown"></i>
+
 const Container = styled.div``;
 
 const List = styled.ul`
