@@ -8,8 +8,8 @@
 
 ### [ Development environment ]
 
-- dependencies : fortawesome / react / react-router-dom / styled-components / styled-reset
-- 실행 방법 : terminal에 `'cd pirates'`입력 => terminal에 `'npm start'`입력
+- dependencies : react / react-router-dom / styled-components / styled-reset / fontawesome
+- 실행 방법 : terminal에 `cd pirates`입력 => terminal에 `npm start`입력
 
 ### [ MainPage ]
 
@@ -53,3 +53,33 @@
 > 4. 탭메뉴 기능
 
 ![스크린샷 2020-10-11 오후 2 36 57](https://user-images.githubusercontent.com/59153077/95671227-3af1e800-0bcf-11eb-821e-866c619bf496.png)
+
+## 파일구조
+
+```sh
+├─THEPIRATES
+│  │
+│  └─README.md
+│
+└─pirates
+   │
+   ├─README.md
+   │
+   ├─node_modules
+   │
+   ├─public
+   │
+   ├─src
+   │  │
+   │  ├─components
+   │  │
+   │  ├─Data
+   │  │
+   │  ├─Pages
+   │  │
+   │  ├─App.js
+   │  │
+   │  └─index.js
+   │
+   └─package.json
+```
