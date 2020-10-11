@@ -5,11 +5,9 @@ import styled from "styled-components";
 import BannerData from "../Data/bannerData.json";
 
 const Container = styled.div``;
-
 const List = styled.ul`
   position: relative;
 `;
-
 const Item = styled.li`
   width: 100%;
   height: 41px;
@@ -19,13 +17,10 @@ const Item = styled.li`
   text-align: center;
   line-height: 2.7;
 `;
-
 const BannerLabel = styled.span``;
-
 const BannerPrice = styled.span`
   color: #b8e986;
 `;
-
 const ToggleBtn = styled.div`
   color: white;
   font-size: 14px;
@@ -34,10 +29,10 @@ const ToggleBtn = styled.div`
   right: 10px;
   cursor: pointer;
 `;
+
 let count = null;
 
-const Banner = () => {
-  const [toggle, setToggle] = useState(false);
+const Banner = ({ toggle, setToggle }) => {
   const [mainData, setMainData] = useState(BannerData[0]);
 
   useEffect(() => {

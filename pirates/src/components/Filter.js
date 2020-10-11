@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import zoneData from "../Data/zoneData.json";
 import itemData from "../Data/itemData.json";
@@ -6,7 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 const FilterContainer = styled.div`
-  width: 100%;
+  width: 420px;
+  background-color: white;
 `;
 
 //Filter Title
@@ -16,7 +17,6 @@ const FilterWrap = styled.div`
   display: flex;
   justify-content: space-around;
 `;
-
 const FilterTitle = styled.div`
   width: 140px;
   color: #2d79bc;
@@ -33,8 +33,8 @@ const FilterSubWrap = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  background-color: white;
 `;
-
 const FilterSubTitle = styled.div`
   width: ${(props) => props.screen || "140px"};
   color: #777777;
@@ -46,11 +46,14 @@ const FilterSubTitle = styled.div`
   cursor: pointer;
 `;
 
-const Filter = () => {
-  const [zoneToggle, setZoneToggle] = useState(false);
-  const [itemToggle, setTtemToggle] = useState(false);
-  const [basicToggle, setBasicToggle] = useState(false);
-
+const Filter = ({
+  zoneToggle,
+  setZoneToggle,
+  itemToggle,
+  setTtemToggle,
+  basicToggle,
+  setBasicToggle,
+}) => {
   return (
     <FilterContainer>
       <FilterWrap>
