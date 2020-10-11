@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import BannerData from "../Data/bannerData.json";
 
 const Container = styled.div``;
 const List = styled.ul`
   position: relative;
 `;
+
 const Item = styled.li`
   width: 100%;
   height: 41px;

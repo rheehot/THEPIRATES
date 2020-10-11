@@ -7,8 +7,10 @@ const StoreContainer = styled.div`
   width: 388px;
   height: 240px;
   background-color: white;
-  border: 1px solid #d1d2d4;
   margin: 0 auto;
+  border: 1px solid #d1d2d4;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #d1d2d4;
 `;
 
 //store header
@@ -59,6 +61,8 @@ const Img = styled.div`
   background-image: url(${(props) => props.img});
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #d1d2d4;
 `;
 const TodayPrice = styled.div`
   width: 55px;

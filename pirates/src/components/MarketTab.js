@@ -28,10 +28,10 @@ const defaultMode = css`
   background-color: #f1f2f3;
 `;
 const TabTitle = styled.button`
+  width: 33.3%;
   height: 35px;
   border: 0;
   outline: 0;
-  padding: 0 47.2px;
   cursor: pointer;
   ${(props) => {
     if (props.state === true) {
