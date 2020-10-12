@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import BannerData from "../Data/bannerData.json";
 
 const Container = styled.div``;
